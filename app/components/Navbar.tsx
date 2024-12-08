@@ -112,7 +112,7 @@ export default function Navbar() {
       </div>
 
       {/* Sidebar (visible on xs screens) */}
-      <div className={`fixed inset-0 bg-gray-700 bg-opacity-50 lg:hidden ${sidebarOpen ? "block" : "hidden"}`}>
+      <div className={`fixed inset-0 bg-gray-700 bg-opacity-50 lg:hidden ${sidebarOpen ? "block z-10" : "hidden"}`}>
         <div className="w-64 bg-white p-4 h-full">
           {/* Close Sidebar */}
           <div className="flex justify-end mb-4">
