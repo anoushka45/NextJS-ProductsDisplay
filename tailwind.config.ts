@@ -12,6 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['Cabinet Grotesk', 'sans-serif'],
+        PlayfairDisplay: ['Playfair Display', 'serif'],
+        geist: ['Geist', 'sans-serif'],
+
+
+      },
     },
   },
   plugins: [],
