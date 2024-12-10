@@ -33,7 +33,7 @@ const SimilarProductCard: React.FC<{ product: Product }> = ({ product }) => {
         </div>
 
         {/* Card Image */}
-        <div className="h-52 lg:h-60 overflow-hidden flex items-center justify-center">
+        <div className="h-52 lg:h-60 overflow-hidden flex items-center justify-center ">
           <img
             src={product.image}
             alt={product.title}
@@ -41,6 +41,8 @@ const SimilarProductCard: React.FC<{ product: Product }> = ({ product }) => {
           />
         </div>
       </div>
+
+      
 
       <div className="mt-4 flex justify-between items-center">
         <h5 className="text-sm lg:text-[24px] font-medium mb-2 text-gray-800 font-PlayfairDisplay">
