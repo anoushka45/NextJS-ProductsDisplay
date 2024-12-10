@@ -18,21 +18,26 @@ const Banner: React.FC = () => {
         {/* Left Section: Images */}
         <div className="relative border border-none rounded-md bg-[#F8F6F4]  ">
           {/* Main Image */}
-          <img
+          <Image
             src={mainImage}
             alt="Main product"
-            className="w-[552px] h-[552px] rounded-lg bg-[#F8F6F4] p-4 mx-auto"
+            width={552}
+            height={552}
+            className="rounded-lg bg-[#F8F6F4] p-4 mx-auto"
           />
           {/* Thumbnails */}
           <div className="absolute top-4 left-4 flex flex-col gap-2">
             {thumbnails.map((thumb, index) => (
-              <img
-                key={index}
-                src={thumb}
-                alt={`Thumbnail ${index + 1}`}
-                className={` rounded-lg cursor-pointer border-2 ${mainImage === thumb ? "border-blue-500" : "border-transparent"
-                  }`}
-              />
+              <Image
+              key={index}
+              src={thumb}
+              alt={`Thumbnail ${index + 1}`}
+              width={40}  // Set the width according to your needs
+              height={40} // Set the height according to your needs
+              className={`rounded-lg cursor-pointer border-2 ${
+                mainImage === thumb ? "border-blue-500" : "border-transparent"
+              }`}
+            />
             ))}
           </div>
         </div>
