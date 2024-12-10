@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -17,27 +17,29 @@ const Banner: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         {/* Left Section: Images */}
         <div className="relative border border-none rounded-md bg-[#F8F6F4]  ">
-          {/* Main Image */}
+          {/* Main Image with priority for LCP */}
           <Image
             src={mainImage}
             alt="Main product"
             width={552}
             height={552}
             className="rounded-lg bg-[#F8F6F4] p-4 mx-auto"
+            priority
+            loading="eager" // For main image to load eagerly for LCP
           />
           {/* Thumbnails */}
           <div className="absolute top-4 left-4 flex flex-col gap-2">
             {thumbnails.map((thumb, index) => (
               <Image
-              key={index}
-              src={thumb}
-              alt={`Thumbnail ${index + 1}`}
-              width={40}  // Set the width according to your needs
-              height={40} // Set the height according to your needs
-              className={`rounded-lg cursor-pointer border-2 ${
-                mainImage === thumb ? "border-blue-500" : "border-transparent"
-              }`}
-            />
+                key={index}
+                src={thumb}
+                alt={`Thumbnail ${index + 1}`}
+                width={40}  // Set the width according to your needs
+                height={40} // Set the height according to your needs
+                className={`rounded-lg cursor-pointer border-2 ${
+                  mainImage === thumb ? "border-blue-500" : "border-transparent"
+                }`}
+              />
             ))}
           </div>
         </div>
