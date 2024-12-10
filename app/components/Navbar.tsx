@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Search Bar */}
         <div className="flex-1 mx-4 ">
-  <div className="relative w-3/4 ">
+  <div className="relative w-[90%] ">
     <input
       type="text"
       placeholder="Rechercher un produit"
@@ -44,7 +44,7 @@ export default function Navbar() {
 
         {/* Icons */}
         <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-6 mt-4 md:mt-0 font-medium text-[#3B4347] hidden lg:flex">
+          <div className=" items-center space-x-6 mt-4 md:mt-0 font-medium text-[#3B4347] hidden lg:flex font-poppins text-sm">
             <a href="#" className="flex items-center space-x-2">
               <Image src="/navbar/lightbulb-icon.svg" alt="Inspirations Icon" width={20} height={20} />
               <span>Inspirations</span>
@@ -94,8 +94,8 @@ export default function Navbar() {
 
 
       {/* Second Layer */}
-      <div className="border-b border-gray-300">
-        <ul className="flex justify-around uppercase hidden lg:flex">
+      <div className="border-b border-[#E5E7EB]">
+        <ul className=" justify-around uppercase hidden lg:flex">
           {["Art de la table", "Mobilier", "Matériel de salle", "Cuisine", "Barbecue", "Tente", "Chauffage", "Podium - Piste de danse", "Son et lumière", "Packs", "Consommables"].map((link) => (
             <li key={link} className="relative">
               <a

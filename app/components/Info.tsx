@@ -52,7 +52,7 @@ function Info() {
     </div>
     
     
-    <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-2 mt-12 mb-5 px-3 ">
+    <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-2 mt-12 mb-16 px-3 ">
       <div className="pr-4 flex items-stretch">
         <img src="/main/display.png" alt="Image" className="w-full h-auto rounded-2xl object-cover" />
       </div>
@@ -73,11 +73,13 @@ function Info() {
         placeholder="john@doe.com"
         className="p-4 border rounded-md w-full mt-3"
       />
-      <button
-        className="p-4 border rounded-md bg-[#5CD2DD] uppercase text-white sm:text-sm xl:text-[18px] mt-3 px-6 whitespace-nowrap w-full sm:w-full md:w-1/4 md:mb-0 sm:mb-4 "
-      >
-        S'inscrire <span className="ml-2">→</span>
-      </button>
+     <button
+  className="p-4 border rounded-md bg-[#5CD2DD] uppercase text-white sm:text-sm xl:text-[18px] mt-3 px-6 w-full sm:w-full md:w-1/4 md:mb-0 sm:mb-4 flex items-center justify-center"
+>
+  S'inscrire 
+  <img src="/main/arrow.svg" alt="" className="ml-2" />
+</button>
+
     </div>
     
         </div>

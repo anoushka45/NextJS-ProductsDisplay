@@ -27,7 +27,7 @@ const SimilarProductCard: React.FC<{ product: Product }> = ({ product }) => {
             alt="Heart Icon"
             className="w-[32px] h-[32px] cursor-pointer"
           />
-          <span className="bg-white text-black text-xs font-semibold px-3 py-1 rounded-full">
+          <span className="bg-white text-black font-geist text-[10px] uppercase font-medium px-3 py-1 rounded-full">
             {product.badge}
           </span>
         </div>

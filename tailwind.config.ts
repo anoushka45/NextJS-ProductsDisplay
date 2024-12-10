@@ -16,6 +16,7 @@ export default {
         sans: ['Cabinet Grotesk', 'sans-serif'],
         PlayfairDisplay: ['Playfair Display', 'serif'],
         geist: ['Geist', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
 
 
       },

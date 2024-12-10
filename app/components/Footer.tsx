@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="py-8 px-6 border-t border-[#39393930] ">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
+    <footer className="pt-6 pb-16 px-6 mt-8 border-t border-[#39393930] ">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start mt-6">
         <div className="flex flex-col md:flex-row items-start mb-6 md:mb-0 w-full md:w-auto">
           <div className="flex items-center mb-4 md:mb-0">
             <Image src="/navbar/logo.svg" alt="Logo" width={133} height={65} />

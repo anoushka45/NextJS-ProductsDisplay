@@ -24,7 +24,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             alt="Heart Icon"
             className="w-[32px] h-[32px] cursor-pointer"
           />
-          <span className="bg-white text-black text-xs font-semibold px-3 py-1 rounded-full">
+          <span className="bg-white text-black font-geist text-[10px] uppercase font-medium px-3 py-1 rounded-full">
             {product.badge}
           </span>
         </div>
@@ -71,8 +71,8 @@ const Items: React.FC<ItemsProps> = ({ products }) => {
           </span>
         </div>
         {/* Left Arrow */}
-        <button className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-blue-500 text-white p-3 rounded-full shadow-md hidden lg:flex">
-          &#8592;
+        <button className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#5CD2DD] h-[46px] w-[46px] hover:bg-blue-500 text-white p-3  hidden lg:flex">
+        <img src="/main/arrow.svg" className="rotate-180 mt-1" alt="" />
         </button>
 
         {/* Products Wrapper */}
@@ -88,8 +88,8 @@ const Items: React.FC<ItemsProps> = ({ products }) => {
         </div>
 
         {/* Right Arrow */}
-        <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-blue-500 text-white p-3 rounded-full shadow-md hidden lg:flex">
-          &#8594;
+        <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#5CD2DD] h-[46px] w-[46px] hover:bg-blue-500 text-white p-3  shadow-md hidden lg:flex">
+          <img src="/main/arrow.svg" alt="" className="mt-1" />
         </button>
       </div>
 
@@ -101,12 +101,7 @@ const Items: React.FC<ItemsProps> = ({ products }) => {
           </span>
         </div>
 
-        {/* Left Arrow */}
-        <button className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-blue-500 text-white p-3 rounded-full shadow-md hidden lg:flex">
-          &#8592;
-        </button>
-
-        {/* Products Wrapper */}
+      
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 py-6 px-4"
         >
@@ -120,10 +115,7 @@ const Items: React.FC<ItemsProps> = ({ products }) => {
           ))}
         </div>
 
-        {/* Right Arrow */}
-        <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-blue-500 text-white p-3 rounded-full shadow-md hidden lg:flex">
-          &#8594;
-        </button>
+        
       </div>
 
 
